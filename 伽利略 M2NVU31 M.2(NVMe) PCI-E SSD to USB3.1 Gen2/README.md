@@ -10,6 +10,14 @@ A consumer grade NVMe storge external closure
 ## lsusb
 
 ```output
+$ lsusb -t
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/6p, 10000M
+    |__ Port 4: Dev 4, If 0, Class=Mass Storage, Driver=uas, 5000M
+```
+
+For some reason(cable?) the device negotiated 5Gbps bandwidth even when the hub supports 10Gbps.
+
+```output
 $ lsusb -s 002:003
 Bus 002 Device 003: ID 152d:0562 JMicron Technology Corp. / JMicron USA Technology Corp. JMS567 SATA 6Gb/s bridge
 ```
