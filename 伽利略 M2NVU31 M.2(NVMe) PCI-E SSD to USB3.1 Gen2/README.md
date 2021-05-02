@@ -528,3 +528,4 @@ ACTION=="add|change", ATTRS{idVendor}=="152d", ATTRS{idProduct}=="0562", SUBSYST
 1. [Thin Provisioning - Windows drivers | Microsoft Docs](https://docs.microsoft.com/en-us/windows-hardware/drivers/storage/thin-provisioning)
 1. [Notes for Linux SCSI logical block provisioning](https://gist.github.com/cathay4t/e80e02a737242a5f3824606543631bfe)
 1. [Logical block provisioning | Direct access block device type model | Information technology -SCSI Block Commands – 5 (SBC-5) | T10](https://www.t10.org/cgi-bin/ac.pl?t=f&f=sbc5r00.pdf)
+1. [[Bug 1336541] Re: No TRIM via USB : Mailing list archive : kernel-packages team in Launchpad](https://lists.launchpad.net/kernel-packages/msg170080.html)
