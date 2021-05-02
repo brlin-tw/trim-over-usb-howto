@@ -503,6 +503,8 @@ Whether how this is calculated by the system is unknown.
 
 TRIM not natively supported by GNU+Linux due to the LBPME bit set to `0` instead of `1`, which is not conforming to the 4.7.3.2 section of the SCSI SBC-5 specification for devices that are classified as a resource provisioned logical unit(Solid-State Drives).
 
+![Specific section in SBC-5 that isn't complied](<Specific section in SBC-5 that isn't complied.png>)
+
 Which is really unfortunate for an exclosure specifically for housing NVMe SSDs.
 
 ## Workarounds
