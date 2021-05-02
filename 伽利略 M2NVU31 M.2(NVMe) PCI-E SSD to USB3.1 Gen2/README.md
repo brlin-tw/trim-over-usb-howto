@@ -524,6 +524,16 @@ The following ugly udev configuration must be applied to enable TRIM:
 ACTION=="add|change", ATTRS{idVendor}=="152d", ATTRS{idProduct}=="0562", SUBSYSTEM=="scsi_disk", ATTR{provisioning_mode}="unmap"
 ```
 
+## Notes
+
+On Microsoft Windows TRIM support is acknowledged after have an NTFS volume on the drive:
+
+![Windows claim the drive is trimmable after formatting to NTFS](<Windows claim the drive is trimmable after formatting to NTFS.png>)
+
+Trimcheck also determines that TRIM is working:
+
+![Trimcheck result on Windows](<Trimcheck result on Windows.png>)
+
 ## Reference
 
 1. [[1/1] sd: do not let LBPME bit stop the VPDs speak - Patchwork](https://patchwork.kernel.org/project/linux-scsi/patch/56df97e0.d08d420a.58e8f.3162@mx.google.com/)
