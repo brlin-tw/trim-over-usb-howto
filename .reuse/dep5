@@ -8,3 +8,12 @@ Files:
     */README.md
 Copyright: Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
 License: CC-BY-SA-4.0+
+
+Files:
+    *.png
+    *.jpg
+    *.gif
+    *.mp4
+    *.mkv
+Copyright: Copyright 2021 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+License: CC-BY-SA-4.0+
