@@ -58,7 +58,7 @@ Logical block provisioning VPD page (SBC):
 
 Relative output:
 
-```
+```txt
   Unmap command supported (LBPU): 1
 ```
 
@@ -79,27 +79,27 @@ Hence:
 
 Relevant output:
 
-```
+```txt
    Logical block provisioning: lbpme=0, lbprz=0
    Logical block length=512 bytes
 ```
 
 ## Maximum bytes that a single SCSI UNMAP command can cover
 
-```
+```txt
 Logical block length=512 bytes * Maximum unmap LBA count: 4194240 = 2147450880 bytes = 2047.9688 MiB ~= 2 GiB
 ```
 
 ## Workaround TRIM support detection
 
-```
+```txt
 # sh -c 'echo unmap > /sys/devices/pci0000:00/0000:00:14.0/usb2/2-4/2-4:1.0/host1/target1:0:0/1:0:0:0/scsi_disk/1:0:0:0/provisioning_mode'
 # bash -c 'echo $((4194240*512)) > /sys/block/sdb/queue/discard_max_bytes'
 ```
 
 ## Result
 
-```
+```txt
 $ sudo blkdiscard -v /dev/sdb
 /dev/sdb: Discarded 63082332160 bytes from the offset 0
 [229643.067229]  sdb: sdb1 sdb2

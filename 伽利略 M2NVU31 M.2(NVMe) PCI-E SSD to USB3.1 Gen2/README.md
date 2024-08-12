@@ -205,7 +205,7 @@ No TRIM support by default
 
 ## smartctl
 
-```
+```txt
 sudo smartctl -a -d sntjmicron /dev/sdb
 smartctl 7.2 2020-12-30 r5155 [x86_64-linux-5.11.0-16-generic] (local build)
 Copyright (C) 2002-20, Bruce Allen, Christian Franke, www.smartmontools.org
@@ -305,7 +305,7 @@ standard INQUIRY:
 
 ## SCSI all VPD pages dump
 
-```
+```txt
 # sg_vpd -a /dev/sdb
 Supported VPD pages VPD page:
   Supported VPD pages [sv]
@@ -444,7 +444,7 @@ Relative output:
 
 ## SCSI Read Capacity results
 
-```
+```txt
 $ sg_readcap -l /dev/sdb
 Read Capacity results:
    Protection: prot_en=0, p_type=0, p_i_exponent=0
@@ -459,7 +459,7 @@ Hence:
 
 Relevant output:
 
-```
+```txt
    Logical block provisioning: lbpme=0, lbprz=0
 ```
 
@@ -494,7 +494,7 @@ Unknown, since `Logical block length=512 bytes` and `Maximum unmap LBA count: -1
 
 However, after applying the [workaround](#workarounds), `lsblk -D` shows that it can discard 4GiB of blocks at once:
 
-```
+```txt
 $ lsblk -D /dev/sdb
 NAME   DISC-ALN DISC-GRAN DISC-MAX DISC-ZERO
 sdb           0        4K       4G         0
