@@ -536,7 +536,7 @@ Trimcheck also determines that TRIM is working:
 
 ## Reference
 
-1. [[1/1] sd: do not let LBPME bit stop the VPDs speak - Patchwork](https://patchwork.kernel.org/project/linux-scsi/patch/56df97e0.d08d420a.58e8f.3162@mx.google.com/)
+1. [\[1/1\] sd: do not let LBPME bit stop the VPDs speak - Patchwork](https://patchwork.kernel.org/project/linux-scsi/patch/56df97e0.d08d420a.58e8f.3162@mx.google.com/)
 1. sntjmicron[,NSID] | -d TYPE, --device=TYPE | RUN-TIME BEHAVIOR OPTIONS: | OPTIONS | smartctl(8) manpage
 1. [Will Windows do unmap on USB drives in any case?](https://social.technet.microsoft.com/Forums/security/en-US/2cfc8c18-57ed-435d-a648-049cdda329bf/will-windows-do-unmap-on-usb-drives-in-any-case?forum=win10itprohardware)
 1. [200679 – broken TRIM support for JMS578 in uas mode](https://bugzilla.kernel.org/show_bug.cgi?id=200679)
@@ -546,4 +546,4 @@ Trimcheck also determines that TRIM is working:
 1. [Thin Provisioning - Windows drivers | Microsoft Docs](https://docs.microsoft.com/en-us/windows-hardware/drivers/storage/thin-provisioning)
 1. [Notes for Linux SCSI logical block provisioning](https://gist.github.com/cathay4t/e80e02a737242a5f3824606543631bfe)
 1. [Logical block provisioning | Direct access block device type model | Information technology -SCSI Block Commands – 5 (SBC-5) | T10](https://www.t10.org/cgi-bin/ac.pl?t=f&f=sbc5r00.pdf)
-1. [[Bug 1336541] Re: No TRIM via USB : Mailing list archive : kernel-packages team in Launchpad](https://lists.launchpad.net/kernel-packages/msg170080.html)
+1. [\[Bug 1336541\] Re: No TRIM via USB : Mailing list archive : kernel-packages team in Launchpad](https://lists.launchpad.net/kernel-packages/msg170080.html)
