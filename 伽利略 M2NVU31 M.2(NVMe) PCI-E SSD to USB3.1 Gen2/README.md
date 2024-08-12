@@ -31,9 +31,9 @@ Device Descriptor:
   bLength                18
   bDescriptorType         1
   bcdUSB               3.20
-  bDeviceClass            0 
-  bDeviceSubClass         0 
-  bDeviceProtocol         0 
+  bDeviceClass            0
+  bDeviceSubClass         0
+  bDeviceProtocol         0
   bMaxPacketSize0         9
   idVendor           0x152d JMicron Technology Corp. / JMicron USA Technology Corp.
   idProduct          0x0562 JMS567 SATA 6Gb/s bridge
@@ -48,7 +48,7 @@ Device Descriptor:
     wTotalLength       0x0079
     bNumInterfaces          1
     bConfigurationValue     1
-    iConfiguration          0 
+    iConfiguration          0
     bmAttributes         0x80
       (Bus Powered)
     MaxPower              896mA
@@ -61,7 +61,7 @@ Device Descriptor:
       bInterfaceClass         8 Mass Storage
       bInterfaceSubClass      6 SCSI
       bInterfaceProtocol     80 Bulk-Only
-      iInterface              0 
+      iInterface              0
       Endpoint Descriptor:
         bLength                 7
         bDescriptorType         5
@@ -92,7 +92,7 @@ Device Descriptor:
       bNumEndpoints           4
       bInterfaceClass         8 Mass Storage
       bInterfaceSubClass      6 SCSI
-      bInterfaceProtocol     98 
+      bInterfaceProtocol     98
       iInterface             10 MSC USB Attached SCSI
       Endpoint Descriptor:
         bLength                 7
@@ -156,7 +156,7 @@ Binary Object Store Descriptor:
     bDevCapabilityType      2
     bmAttributes   0x00000f0e
       BESL Link Power Management (LPM) Supported
-    BESL value     3840 us 
+    BESL value     3840 us
   SuperSpeed USB Device Capability:
     bLength                10
     bDescriptorType        16
@@ -298,8 +298,8 @@ standard INQUIRY:
   SCCS=0  ACC=0  TPGS=0  3PC=0  Protect=0  [BQue=0]
   EncServ=0  MultiP=0  [MChngr=0]  [ACKREQQ=0]  Addr16=0
   [RelAdr=0]  WBus16=0  Sync=0  [Linked=0]  [TranDis=0]  CmdQue=1
-  Vendor_identification: JMicron 
-  Product_identification: Tech            
+  Vendor_identification: JMicron
+  Product_identification: Tech
   Product_revision_level: 0205
 ```
 
@@ -325,7 +325,7 @@ Device Identification VPD page:
     designator type: NAA,  code set: Binary
       0x3044564198838980
     designator type: T10 vendor identification,  code set: ASCII
-      vendor id: JMicron 
+      vendor id: JMicron
       vendor specific: Tech            DD56419883898
 
 Block limits VPD page (SBC):
@@ -406,7 +406,7 @@ Block limits VPD page (SBC):
   Maximum atomic boundary size: 0 blocks [can only write atomic 1 block]
 ```
 
-Relavant info: 
+Relavant info:
 
 ```output
   Maximum unmap LBA count: -1 [unbounded]
@@ -467,22 +467,22 @@ According to ref#1, Linux kernel will not read UNMAP related VPDs (hence not ena
 
 > We don't skip the entire VPD page if LBPME=1, just the parts that are
 > related to the logical block provisioning.
-> 
+>
 > The reason we read those values in the first place is so that we can set
 up discard. If the device signals that it does not support discard we
 have had no reason to read them or parse them.
-> 
+>
 > Since there are a plethora of USB-SATA devices out there that get this
 > incredibly wrong (including discarding blocks *outside* of the specified
 > block range), I am not going to blindly enable this feature.
-> 
+>
 > If you want to tinker with your own setup that's fine. And you are
 > clearly capable of doing so.
-> 
+>
 > I, however, have to be extremely cautious not to enable something that
 > might inadvertently cause data corruption for users out there. That's
 > all I care about.
-> 
+>
 > If the device manufacturer had intended to support discards then they
 > would presumably have set the LBPME flag per the spec. And if they
 > intended to support it but messed up setting the single bit flag that
