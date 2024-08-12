@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: How to notify unused blocks to the flash storage controller over the USB interface
+Upstream-Contact: Issues · 林博仁 Buo-ren Lin / How to notify unused blocks to the flash storage controller over the USB interface  · GitLab <https://gitlab.com/brlin/trim-over-usb-howto/-/issues>
+Source: https://gitlab.com/brlin/trim-over-usb-howto
+
+Files:
+    *README.md
+    */README.md
+Copyright: Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+License: CC-BY-SA-4.0+
