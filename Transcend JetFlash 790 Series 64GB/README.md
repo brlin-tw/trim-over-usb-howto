@@ -31,7 +31,7 @@ Block limits VPD page (SBC):
   Maximum atomic boundary size: 0 blocks [can only write atomic 1 block]
 ```
 
-Relavant info: 
+Relavant info:
 
 ```output
   Maximum unmap LBA count: 4194240
