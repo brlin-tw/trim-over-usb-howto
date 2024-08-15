@@ -1,0 +1,11 @@
+Logical block provisioning VPD page (SBC):
+  Unmap command supported (LBPU): 1
+  Write same (16) with unmap bit supported (LBPWS): 0
+  Write same (10) with unmap bit supported (LBPWS10): 0
+  Logical block provisioning read zeros (LBPRZ): 0
+  Anchored LBAs supported (ANC_SUP): 0
+  Threshold exponent: 0 [threshold sets not supported]
+  Descriptor present (DP): 0
+  Minimum percentage: 0 [not reported]
+  Provisioning type: 0 (not known or fully provisioned)
+  Threshold percentage: 0 [percentages not supported]

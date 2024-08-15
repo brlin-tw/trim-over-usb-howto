@@ -1,0 +1,6 @@
+Supported VPD pages VPD page:
+  Supported VPD pages [sv]
+  Unit serial number [sn]
+  Device identification [di]
+  Block limits (SBC) [bl]
+  Logical block provisioning (SBC) [lbpv]

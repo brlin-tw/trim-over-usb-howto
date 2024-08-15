@@ -1,0 +1,4 @@
+NAME    VENDOR   MODEL                        SERIAL           SIZE
+sda     JetFlash Transcend 64GB               csne_d46BG_1100 58.8G
+zd0                                                             20M
+nvme0n1          Samsung SSD 970 EVO Plus 2TB S4J4NX0RB00828P  1.8T

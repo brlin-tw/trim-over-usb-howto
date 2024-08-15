@@ -64,3 +64,8 @@ indent_size = 2
 [/LICENSES/*]
 indent_size = unset
 indent_style = unset
+
+# Ignore indentation errors from the program output files
+[*.out.txt]
+indent_size = unset
+indent_style = unset

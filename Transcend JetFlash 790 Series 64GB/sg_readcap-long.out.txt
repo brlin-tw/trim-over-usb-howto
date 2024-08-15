@@ -1,0 +1,10 @@
+$ sg_readcap --long /dev/sda
+Read Capacity results:
+   Protection: prot_en=0, p_type=0, p_i_exponent=0
+   Logical block provisioning: lbpme=0, lbprz=0
+   Last LBA=123207679 (0x757ffff), Number of logical blocks=123207680
+   Logical block length=512 bytes
+   Logical blocks per physical block exponent=0
+   Lowest aligned LBA=0
+Hence:
+   Device size: 63082332160 bytes, 60160.0 MiB, 63.08 GB

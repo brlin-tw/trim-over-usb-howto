@@ -1,0 +1,2 @@
+$ lsusb -s 002:005
+Bus 002 Device 005: ID 8564:1000 Transcend Information, Inc. JetFlash

@@ -1,0 +1,19 @@
+$ sudo sg_vpd -p bl /dev/sdb
+Block limits VPD page (SBC):
+  Write same non-zero (WSNZ): 0
+  Maximum compare and write length: 0 blocks [Command not implemented]
+  Optimal transfer length granularity: 1 blocks
+  Maximum transfer length: 65535 blocks
+  Optimal transfer length: 65535 blocks
+  Maximum prefetch transfer length: 65535 blocks
+  Maximum unmap LBA count: 4194240
+  Maximum unmap block descriptor count: 1
+  Optimal unmap granularity: 1 blocks
+  Unmap granularity alignment valid: false
+  Unmap granularity alignment: 0 [invalid]
+  Maximum write same length: 0 blocks [not reported]
+  Maximum atomic transfer length: 0 blocks [not reported]
+  Atomic alignment: 0 [unaligned atomic writes permitted]
+  Atomic transfer length granularity: 0 [no granularity requirement
+  Maximum atomic transfer length with atomic boundary: 0 blocks [not reported]
+  Maximum atomic boundary size: 0 blocks [can only write atomic 1 block]
