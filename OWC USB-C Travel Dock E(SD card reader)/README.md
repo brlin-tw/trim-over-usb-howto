@@ -2,6 +2,10 @@
 
 The SD card reader of [the OWC USB-C Travel Dock E dock](https://www.owc.com/solutions/usb-c-travel-dock-e).
 
+## Table of contents
+
+[TOC]
+
 ## Identification
 
 ### USB
