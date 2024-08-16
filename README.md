@@ -45,7 +45,7 @@ The answer of these questions varies based on the following factors:
 
 We'll individually collect related info of each device to avoid bias.
 
-## Products
+## Research results
 
 We currently have research results for the following products:
 
