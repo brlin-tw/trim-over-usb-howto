@@ -72,23 +72,28 @@ lsblk "${lsblk_opts[@]}"
 According to [the command output](lsblk.out.txt) we can determine that the kernel name of the storage device is `_kernel_name_`.
 -->
 
-### Check the SCSI vital product data(VPD) pages supported by the SCSI device
+### Determine whether the unused block notification feature is enabled by the operating system by default
 
-Run the following command _as root_ in a text terminal to determine which SCSI vital product data(VPD) pages supported by the SCSI device:
+Run the following commands in a text terminal to determine the kernel name of the storage device:
 
 ```bash
 device_kernel_name=_kernel_name_
 device="/dev/${device_kernel_name}"
-sg_vpd "${device}"
+lsblk_opts=(
+    # Don't print sub-device nodes
+    --nodeps
+
+    # Print information about the unused block notification capabilities
+    # for each device.
+    --discard
+)
+lsblk "${lsblk_opts[@]}" "${device}"
 ```
 
 <!--
-According to [the command's output](sg_vpd.out.txt) the following VPD pages are available:
-
-* Supported VPD pages \[sv\]
-* Unit serial number \[sn\]
-* Device identification \[di\]
-*
+According to [the command output](lsblk-discard-native.out.txt) we can
+determine that the operating system didn't enable the unused block
+notification feature for this storage device.
 -->
 
 ### Check whether the storage device has declared implementation of the Logical Block Provisioning Management feature specified by SBC-4
@@ -123,6 +128,25 @@ Read Capacity results:
     ...stripped...
 
 ```
+-->
+
+### Check the SCSI vital product data(VPD) pages supported by the SCSI device
+
+Run the following command _as root_ in a text terminal to determine which SCSI vital product data(VPD) pages supported by the SCSI device:
+
+```bash
+device_kernel_name=_kernel_name_
+device="/dev/${device_kernel_name}"
+sg_vpd "${device}"
+```
+
+<!--
+According to [the command's output](sg_vpd.out.txt) the following VPD pages are available:
+
+* Supported VPD pages \[sv\]
+* Unit serial number \[sn\]
+* Device identification \[di\]
+*
 -->
 
 ### Check the supported parameters of the SCSI UNMAP command of the storage device
