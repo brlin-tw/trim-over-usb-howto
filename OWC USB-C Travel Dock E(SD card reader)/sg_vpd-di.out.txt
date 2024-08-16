@@ -1,0 +1,12 @@
+$ sudo sg_vpd --page=0x83 --long /dev/sda
+Device Identification VPD page:
+   [PQual=0  Peripheral device type: disk]
+  Addressed logical unit:
+    designator type: EUI-64 based,  code set: Binary
+      EUI-64 based 8 byte identifier
+      IEEE Company_id: 0xe04c
+      Vendor Specific Extension Identifier: 0x2020202000
+    VPD page error: designator length longer than
+     remaining response length=12
+VPD page error: short designator around offset -1
+VPD page error: short designator around offset -1

@@ -1,0 +1,2 @@
+fetching VPD page failed: Numerical argument out of domain
+sg_vpd failed: Numerical argument out of domain

@@ -309,6 +309,7 @@ UNMAP SCSI command.
 We currently have research results for the following products:
 
 * [伽利略 M2NVU31 M.2(NVMe) PCI-E SSD to USB3.1 Gen2](<伽利略 M2NVU31 M.2(NVMe) PCI-E SSD to USB3.1 Gen2>)
+* [OWC USB-C Travel Dock E(SD card reader)](<OWC USB-C Travel Dock E(SD card reader)>)
 * [Transcend JetFlash 790 Series 64GB](<Transcend JetFlash 790 Series 64GB>)
 
 ## References

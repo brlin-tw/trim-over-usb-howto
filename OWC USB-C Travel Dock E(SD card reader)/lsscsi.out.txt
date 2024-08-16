@@ -1,0 +1,2 @@
+[0:0:0:0]    disk    Generic- USB3.0 CRW       1.00  /dev/sda
+[N:0:4:1]    disk    Samsung SSD 970 EVO Plus 2TB__1            /dev/nvme0n1

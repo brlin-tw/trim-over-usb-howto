@@ -1,0 +1,9 @@
+Read Capacity results:
+   Protection: prot_en=0, p_type=0, p_i_exponent=0
+   Logical block provisioning: lbpme=0, lbprz=0
+   Last LBA=62333951 (0x3b723ff), Number of logical blocks=62333952
+   Logical block length=512 bytes
+   Logical blocks per physical block exponent=0
+   Lowest aligned LBA=0
+Hence:
+   Device size: 31914983424 bytes, 30436.5 MiB, 31.91 GB

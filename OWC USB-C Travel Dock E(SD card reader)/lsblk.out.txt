@@ -1,0 +1,4 @@
+NAME    VENDOR   MODEL                        SERIAL           SIZE
+sda     Generic- USB3.0 CRW                   201408282030    29.7G
+zd0                                                             20M
+nvme0n1          Samsung SSD 970 EVO Plus 2TB S4J4NX0RB00828P  1.8T

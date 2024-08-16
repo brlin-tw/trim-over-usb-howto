@@ -1,0 +1,2 @@
+NAME DISC-ALN DISC-GRAN DISC-MAX DISC-ZERO
+sda         0      512B       0B         0

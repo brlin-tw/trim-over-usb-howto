@@ -1,0 +1,7 @@
+kernel: sd 0:0:0:0: [sda] tag#0 FAILED Result: hostbyte=DID_OK driverbyte=DRIVER_OK cmd_age=0s
+kernel: sd 0:0:0:0: [sda] tag#0 Sense Key : Illegal Request [current]
+kernel: sd 0:0:0:0: [sda] tag#0 Add. Sense: Invalid field in cdb
+kernel: sd 0:0:0:0: [sda] tag#0 CDB: Unmap/Read sub-channel 42 00 00 00 00 00 00 00 18 00
+kernel: critical target error, dev sda, sector 0 op 0x3:(DISCARD) flags 0x4000 phys_seg 1 prio class 0
+kernel: critical target error, dev sda, sector 8388607 op 0x3:(DISCARD) flags 0x0 phys_seg 1 prio class 0
+kernel:  sda: sda1
