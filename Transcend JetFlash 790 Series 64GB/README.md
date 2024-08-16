@@ -62,7 +62,7 @@ According to [the command's output](sg_vpd.out.txt) the following VPD pages are 
 Run the following command _as root_ in a text terminal to query the
 Logical block provisioning VPD page of the storage device:
 
-```command
+```bash
 sg_vpd_opts=(
     --page=lbpv
 )
@@ -81,7 +81,7 @@ that the storage drive _claim_ it has UNMAP SCSI command support:
 Run the following command _as root_ in a text terminal to query the
 response of the SCSI READ CAPACITY (16) command of the storage device:
 
-```output
+```bash
 sg_readcap_opts=(
     # Use the 16 byte cdb variant of the READ CAPACITY command, allow
     # proper results for storage drives capacity over 2TiB
@@ -117,7 +117,7 @@ usage of UNMAP SCSI commands.
 Run the following command _as root_ in a text terminal to query the
 Block limits VPD page of the storage device:
 
-```command
+```bash
 sg_vpd_opts=(
     --page=bl
 )
