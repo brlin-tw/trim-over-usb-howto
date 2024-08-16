@@ -281,3 +281,5 @@ The following materials are referenced during the development of this research:
   Explains the format of the SCSI device addresses.
 * [Queue sysfs files | Info on the Block I/O (BIO) layer | Linux kernel plaintext documentation](https://www.kernel.org/doc/Documentation/block/queue-sysfs.txt)  
   Explains the definition of the discard_max_bytes sysfs file.
+* [‎Gemini - BCD Device Format](https://gemini.google.com/share/6e3b5cb1a233)  
+  Explains the format of the `bcdDevice` device descriptor.
