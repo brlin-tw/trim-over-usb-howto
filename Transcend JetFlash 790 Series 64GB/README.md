@@ -99,24 +99,6 @@ previous steps.
 
 ### Check the supported parameters of the SCSI UNMAP command of the storage device
 
-Although the missing declaration of the SCSI Logical Block Provisioning
-Management feature, there's still possibility that the drive actually
-implemented the unused block notification functionality in the firmware.
-Let's try to find out.
-
-**Warning:** There's a reason why the functionality is not enabled by
-default as there's a chance that the controller have a problomatic
-reaction when facing the UNMAP SCSI command, which may results in
-problems including but not limited to:
-
-* The drive simply fails and no longer functions properly, rendering
-  it no longer usable for data storage/access.
-* The drive erratically respond to the command and erases memory blocks
-  that are not requested, leads to data loss.
-
-**Only continue if you can take the responsibility of device
-failure/data recovery.**
-
 Let's temporarily disregard the fact that the storage device have
 claimed it do not have Logical Block Provisioning Management and
 assume that it _do_ in fact support the UNMAP SCSI command, let's check
@@ -172,7 +154,25 @@ $$
 At least in the assumption that the storage device did announce it
 correctly(which we already know, it didn't in some places).
 
-### Determine the SCSI device address of the storage device
+### Enable unused block notification support by force
+
+Although the missing declaration of the SCSI Logical Block Provisioning
+Management feature, there's still possibility that the drive actually
+implemented the unused block notification functionality in the firmware.
+Let's try to find out.
+
+**Warning:** There's a reason why the functionality is not enabled by
+default as there's a chance that the controller have a problomatic
+reaction when facing the UNMAP SCSI command, which may results in
+problems including but not limited to:
+
+* The drive simply fails and no longer functions properly, rendering
+  it no longer usable for data storage/access.
+* The drive erratically respond to the command and erases memory blocks
+  that are not requested, leads to data loss.
+
+**Only continue if you can take the responsibility of device
+failure/data recovery.**
 
 In order to force enable the unused block notification feature, we need
 to first determine the address of the SCSI device of the storage device
@@ -185,8 +185,6 @@ lsscsi
 
 From [the command's output](lsscsi.out.txt) we can determine that the
 address of the SCSI device is `0:0:0:0`.
-
-### Enable unused block notification support by force
 
 We can set the max bytes of unused data to notify in a single UNMAP SCSI command by running the following commands _as root_ after setting the proper `scsi_device_address`:
 
