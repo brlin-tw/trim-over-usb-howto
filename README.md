@@ -224,7 +224,9 @@ From [the command's output](lsscsi.out.txt) we can determine that the
 address of the SCSI device is `0:0:0:0`.
 -->
 
-We can set the max bytes of unused data to notify in a single UNMAP SCSI command by running the following commands _as root_ after setting the proper `scsi_device_address`:
+We can force enable the unused block notification support feature using
+the UNMAP SCSI command by running the following commands _as root_ after
+setting the proper `scsi_device_address`:
 
 ```bash
 scsi_device_address=_address_
