@@ -10,7 +10,7 @@ According to [the output of the `lsusb` command](lsusb.out.txt):
 
 **Vendor ID:** `8564`  
 **Product ID:** `1000`  
-**bcdDevice:** `11.00`
+**Device version:** `11.0.0`
 
 ## Verdict
 
