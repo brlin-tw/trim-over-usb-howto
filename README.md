@@ -58,7 +58,7 @@ The following material are referenced during the development of this project:
 
 * [Discard over USB - Gentoo Wiki](https://wiki.gentoo.org/wiki/Discard_over_USB)  
   Explains how to enable discard/trim operation for block devices via the USB bus.
-* [External SSD with TRIM support - Solid state drive - ArchWiki](https://wiki.archlinux.org/title/Solid_state_drive#External_SSD_with_TRIM_support)
+* [External SSD with TRIM support - Solid state drive - ArchWiki](https://wiki.archlinux.org/title/Solid_state_drive#External_SSD_with_TRIM_support)  
   Explains how to check and enable TRIM operation on solid storage drives over a USB-to-SATA bridge chips.
 * [Hardware support - Trim (computing) - Wikipedia](https://en.wikipedia.org/wiki/Trim_(computing)#Hardware_support)  
   Explains the equivalent commands of unused block notification operation for each protocols.
