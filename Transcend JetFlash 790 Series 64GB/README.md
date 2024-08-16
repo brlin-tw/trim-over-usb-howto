@@ -95,7 +95,16 @@ According to [the command's output](sg_readcap-long.out.txt) we can
 verify that the storage drive _claims_ that it does not support the
 Logical Block Provisioning Management feature specified by SBC-4,
 which _contradicts_ with the support of the UNMAP command in the
-previous steps.
+previous steps:
+
+```txt
+Read Capacity results:
+   Protection: prot_en=0, p_type=0, p_i_exponent=0
+   Logical block provisioning: lbpme=0, lbprz=0
+
+    ...stripped...
+
+```
 
 ### Check the supported parameters of the SCSI UNMAP command of the storage device
 
