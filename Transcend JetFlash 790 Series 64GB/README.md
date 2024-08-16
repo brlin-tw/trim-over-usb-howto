@@ -4,7 +4,7 @@ A USB 3.1 consumer grade USB key by Transcend
 
 ## Identification
 
-### USB ID
+### USB
 
 According to [the output of the `lsusb` command](lsusb.out.txt):
 
