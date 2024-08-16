@@ -64,5 +64,8 @@ The following material are referenced during the development of this project:
   Explains the equivalent commands of unused block notification operation for each protocols.
 * [sd: disable logical block provisioning if 'lbpme' is not set - Patchwork](https://patchwork.kernel.org/project/linux-scsi/patch/20190214221558.09174756@endymion/)  
   Explains the reasoning that Linux Kernel requires the LBPME bit in order to enable unused memory blocks notification support.
+* [SCSI Commands Reference Manual 100293068, Rev. J](https://www.seagate.com/files/staticfiles/support/docs/manual/Interface%20manuals/100293068j.pdf)  
+  Documents the Serial Attached SCSI(SAS) commands in the SCSI specifications, sections that may include useful information are:
+    + 5.4 Vital product data parameters
 * [Enabling TRIM on an external SSD on a Raspberry Pi | Jeff Geerling](https://www.jeffgeerling.com/blog/2020/enabling-trim-on-external-ssd-on-raspberry-pi)
 * [Trying to get SSD boot working on pi4 - Page 2 - Raspberry Pi Forums](https://www.raspberrypi.org/forums/viewtopic.php?p=1708655#p1708655)
