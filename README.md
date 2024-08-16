@@ -69,3 +69,7 @@ The following material are referenced during the development of this project:
     + 5.4 Vital product data parameters
 * [Enabling TRIM on an external SSD on a Raspberry Pi | Jeff Geerling](https://www.jeffgeerling.com/blog/2020/enabling-trim-on-external-ssd-on-raspberry-pi)
 * [Trying to get SSD boot working on pi4 - Page 2 - Raspberry Pi Forums](https://www.raspberrypi.org/forums/viewtopic.php?p=1708655#p1708655)
+* The lsblk(8) manual page  
+  Explains how to use the `--nodeps` and `--output` command-line options.
+* The sg_vpd(8) manual page  
+  Explains how to use the `--long` `sg_vpd` command-line option.
