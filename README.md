@@ -332,3 +332,11 @@ The following material are referenced during the development of this project:
   Explains how to use the `--nodeps` and `--output` command-line options.
 * The sg_vpd(8) manual page  
   Explains how to use the `--long` `sg_vpd` command-line option.
+* [‎Gemini - LBP in SCSI](https://gemini.google.com/share/e90021aaed7c)  
+  Introduces what Logical Block Provisioning Management (LBP) in SCSI do.
+* [SCSI device location codes - IBM Documentation](https://www.ibm.com/docs/en/aix/7.3?topic=codes-scsi-device-location)  
+  Explains the format of the SCSI device location code.
+* [SCSI Addressing](https://tldp.org/HOWTO/SCSI-2.4-HOWTO/scsiaddr.html)  
+  Explains the format of the SCSI device addresses.
+* [Queue sysfs files | Info on the Block I/O (BIO) layer | Linux kernel plaintext documentation](https://www.kernel.org/doc/Documentation/block/queue-sysfs.txt)  
+  Explains the definition of the discard_max_bytes sysfs file.

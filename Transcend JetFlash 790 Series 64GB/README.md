@@ -273,13 +273,5 @@ UNMAP SCSI command.
 
 The following materials are referenced during the development of this research:
 
-* [‎Gemini - LBP in SCSI](https://gemini.google.com/share/e90021aaed7c)  
-  Introduces what Logical Block Provisioning Management (LBP) in SCSI do.
-* [SCSI device location codes - IBM Documentation](https://www.ibm.com/docs/en/aix/7.3?topic=codes-scsi-device-location)  
-  Explains the format of the SCSI device location code.
-* [SCSI Addressing](https://tldp.org/HOWTO/SCSI-2.4-HOWTO/scsiaddr.html)  
-  Explains the format of the SCSI device addresses.
-* [Queue sysfs files | Info on the Block I/O (BIO) layer | Linux kernel plaintext documentation](https://www.kernel.org/doc/Documentation/block/queue-sysfs.txt)  
-  Explains the definition of the discard_max_bytes sysfs file.
 * [‎Gemini - BCD Device Format](https://gemini.google.com/share/6e3b5cb1a233)  
   Explains the format of the `bcdDevice` device descriptor.
