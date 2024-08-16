@@ -186,7 +186,7 @@ lsscsi
 From [the command's output](lsscsi.out.txt) we can determine that the
 address of the SCSI device is `0:0:0:0`.
 
-## Enable unused block notification support by force
+### Enable unused block notification support by force
 
 We can set the max bytes of unused data to notify in a single UNMAP SCSI command by running the following commands _as root_ after setting the proper `scsi_device_address`:
 
@@ -216,7 +216,7 @@ device_name=sda
 echo 2147450880 > "/sys/block/${device_name}/queue/discard_max_bytes"
 ```
 
-## Test whether unused block notification actually work
+### Test whether unused block notification actually work
 
 Now we can test whether the unused block notification really work by
 triggering a whole drive/partition block device discard operation by
