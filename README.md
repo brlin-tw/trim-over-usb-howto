@@ -233,7 +233,9 @@ scsi_device_address=_address_
 echo unmap > "/sys/class/scsi_disk/${scsi_device_address}/provisioning_mode"
 ```
 
-Now that the UNMAP command is enabled, run the following commands to check whether the data size of each UNMAP SCSI command set by the kernel is sane:
+Now that the UNMAP command is enabled, run the following commands to
+check whether the data size of each UNMAP SCSI command set by the kernel
+is sane:
 
 ```bash
 device_kernel_name=_kernel_name_
