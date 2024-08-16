@@ -9,7 +9,8 @@ A USB 3.1 consumer grade USB key by Transcend
 According to [the output of the `lsusb` command](lsusb.out.txt):
 
 **Vendor ID:** `8564`  
-**Product ID:** `1000`
+**Product ID:** `1000`  
+**bcdDevice:** `11.00`
 
 ## Verdict
 
