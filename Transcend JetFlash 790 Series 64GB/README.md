@@ -57,7 +57,7 @@ According to [the command's output](sg_vpd.out.txt) the following VPD pages are 
 * Block limits (SBC) \[bl\]
 * Logical block provisioning (SBC) \[lbpv\]
 
-## Check whether the storage device supports the SCSI UNMAP command
+### Check whether the storage device supports the SCSI UNMAP command
 
 Run the following command _as root_ in a text terminal to query the
 Logical block provisioning VPD page of the storage device:
@@ -76,7 +76,7 @@ that the storage drive _claim_ it has UNMAP SCSI command support:
   Unmap command supported (LBPU): 1
 ```
 
-## Check whether the storage device has declared implementation of the Logical Block Provisioning Management feature specified by SBC-4
+### Check whether the storage device has declared implementation of the Logical Block Provisioning Management feature specified by SBC-4
 
 Run the following command _as root_ in a text terminal to query the
 response of the SCSI READ CAPACITY (16) command of the storage device:
@@ -97,7 +97,7 @@ Logical Block Provisioning Management feature specified by SBC-4,
 which _contradicts_ with the support of the UNMAP command in the
 previous steps.
 
-## Check the supported parameters of the SCSI UNMAP command of the storage device
+### Check the supported parameters of the SCSI UNMAP command of the storage device
 
 Although the missing declaration of the SCSI Logical Block Provisioning
 Management feature, there's still possibility that the drive actually
@@ -172,7 +172,7 @@ $$
 At least in the assumption that the storage device did announce it
 correctly(which we already know, it didn't in some places).
 
-## Determine the SCSI device address of the storage device
+### Determine the SCSI device address of the storage device
 
 In order to force enable the unused block notification feature, we need
 to first determine the address of the SCSI device of the storage device
