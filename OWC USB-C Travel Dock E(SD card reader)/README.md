@@ -23,7 +23,30 @@ results:
 
 ### SD card for testing
 
-Sandisk Ultra 32GB micro SD card(SDHC/UHS-I/Class 10)
+Sandisk Ultra 32GB micro SD card(SDHC/UHS-I/Class 10)  
+Supports ERASE command, optimal erase size 4MiB
+
+**OEM ID:** `0x5344`  
+**Manufacturer ID:** `0x000003`  
+**Manufacture date:** `05/2021`  
+**Name:** `SC32G`  
+**Hardware revision:** `0x8`  
+**Firmware revision:** `0x0`
+
+```txt
+brlin@brlin-mz-530-gx:~$ sudo blkdiscard -fv /dev/mmcblk0
+blkdiscard: Operation forced, data will be lost!
+/dev/mmcblk0: Discarded 31914983424 bytes from the offset 0
+brlin@brlin-mz-530-gx:~$ sudo xxd -l 128 "${device}"
+00000000: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000010: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000030: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000040: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000050: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000060: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000070: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+```
 
 ## Verdict
 
@@ -207,7 +230,7 @@ However, if you check the binary content of the storage drive you'll
 find that the drive's content isn't erased at all:
 
 ```txt
-device_kernel_name=sda
+device_kernel_name=mmcblk0
 device="/dev/${device_kernel_name}"
 sudo xxd -l 128 "${device}"
 00000000: 474e 5520 5061 7274 6564 204c 6f6f 7062  GNU Parted Loopb
